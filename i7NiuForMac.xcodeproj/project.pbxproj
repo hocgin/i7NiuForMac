@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1127F64B21AA74EAAA84145D /* Pods_i7NiuForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC9344050EE017CC863B498 /* Pods_i7NiuForMac.framework */; };
+		2B3A1B29BD72B2B90F8611D2 /* Pods_i7NiuForMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AF1EB4F6FB93D771AF620E /* Pods_i7NiuForMacTests.framework */; };
+		44074AE9AF9D3C04D2222725 /* Pods_i7NiuForMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFACB4BC7CB666C456B2925 /* Pods_i7NiuForMacUITests.framework */; };
+		5717E3911E5B18AA009FBBDA /* UploadFileCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717E3901E5B18AA009FBBDA /* UploadFileCellView.swift */; };
+		5717E3941E5B1D39009FBBDA /* UploadFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717E3931E5B1D39009FBBDA /* UploadFileModel.swift */; };
+		5717E3961E5B20CE009FBBDA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717E3951E5B20CE009FBBDA /* Utils.swift */; };
+		574299F71E5B41230007A26D /* _Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574299F61E5B41230007A26D /* _Custom.swift */; };
+		57CDFC0F1E5B115B00B89510 /* UploadFileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDFC0E1E5B115B00B89510 /* UploadFileListView.swift */; };
+		57E688A21E5DE0CC004286C8 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E688A11E5DE0CC004286C8 /* PreferencesController.swift */; };
+		57E8E6F81E59D82B00BAB3B1 /* I7NiuUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8E6F71E59D82B00BAB3B1 /* I7NiuUploadManager.swift */; };
 		57FC84AC1E59CF64001CABB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84AB1E59CF64001CABB6 /* AppDelegate.swift */; };
 		57FC84AE1E59CF64001CABB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84AD1E59CF64001CABB6 /* ViewController.swift */; };
 		57FC84B01E59CF64001CABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FC84AF1E59CF64001CABB6 /* Assets.xcassets */; };
 		57FC84B31E59CF64001CABB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FC84B11E59CF64001CABB6 /* Main.storyboard */; };
 		57FC84BE1E59CF65001CABB6 /* i7NiuForMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84BD1E59CF65001CABB6 /* i7NiuForMacTests.swift */; };
 		57FC84C91E59CF65001CABB6 /* i7NiuForMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84C81E59CF65001CABB6 /* i7NiuForMacUITests.swift */; };
+		57FC84D71E59D23E001CABB6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84D61E59D23E001CABB6 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AFACB4BC7CB666C456B2925 /* Pods_i7NiuForMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B7BEA90C3F25BAB2F289342 /* Pods-i7NiuForMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CB0687A90893EE7C57E8FA9 /* Pods-i7NiuForMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3ABCA908160A2F51B2219892 /* Pods-i7NiuForMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C802B53C45162F39091FA89 /* Pods-i7NiuForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac.release.xcconfig"; sourceTree = "<group>"; };
+		3DC9344050EE017CC863B498 /* Pods_i7NiuForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		508EB2218D5A4EE53921485A /* Pods-i7NiuForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac.debug.xcconfig"; sourceTree = "<group>"; };
+		5717E3901E5B18AA009FBBDA /* UploadFileCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileCellView.swift; sourceTree = "<group>"; };
+		5717E3931E5B1D39009FBBDA /* UploadFileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileModel.swift; sourceTree = "<group>"; };
+		5717E3951E5B20CE009FBBDA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		574299F61E5B41230007A26D /* _Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Custom.swift; sourceTree = "<group>"; };
+		57CDFC0E1E5B115B00B89510 /* UploadFileListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileListView.swift; sourceTree = "<group>"; };
+		57E688A11E5DE0CC004286C8 /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
+		57E8E6F71E59D82B00BAB3B1 /* I7NiuUploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I7NiuUploadManager.swift; sourceTree = "<group>"; };
 		57FC84A81E59CF64001CABB6 /* i7NiuForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = i7NiuForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FC84AB1E59CF64001CABB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57FC84AD1E59CF64001CABB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +70,9 @@
 		57FC84C41E59CF65001CABB6 /* i7NiuForMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = i7NiuForMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FC84C81E59CF65001CABB6 /* i7NiuForMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i7NiuForMacUITests.swift; sourceTree = "<group>"; };
 		57FC84CA1E59CF65001CABB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FC84D61E59D23E001CABB6 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		A0AF1EB4F6FB93D771AF620E /* Pods_i7NiuForMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F465579618D0CA6F0810DD /* Pods-i7NiuForMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1127F64B21AA74EAAA84145D /* Pods_i7NiuForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3A1B29BD72B2B90F8611D2 /* Pods_i7NiuForMacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +96,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44074AE9AF9D3C04D2222725 /* Pods_i7NiuForMacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5717E3921E5B1D1C009FBBDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5717E3931E5B1D39009FBBDA /* UploadFileModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		57CDFC101E5B125F00B89510 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57CDFC0E1E5B115B00B89510 /* UploadFileListView.swift */,
+				5717E3901E5B18AA009FBBDA /* UploadFileCellView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		57E688A01E5DD51E004286C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57FC84D61E59D23E001CABB6 /* MainController.swift */,
+				57FC84B11E59CF64001CABB6 /* Main.storyboard */,
+				57E688A11E5DE0CC004286C8 /* PreferencesController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		57FC849F1E59CF64001CABB6 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +137,8 @@
 				57FC84BC1E59CF65001CABB6 /* i7NiuForMacTests */,
 				57FC84C71E59CF65001CABB6 /* i7NiuForMacUITests */,
 				57FC84A91E59CF64001CABB6 /* Products */,
+				5CFF466E67ECC5C130FDDD4C /* Pods */,
+				5B5999BB2FF6223E6B2666D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +155,16 @@
 		57FC84AA1E59CF64001CABB6 /* i7NiuForMac */ = {
 			isa = PBXGroup;
 			children = (
+				57E688A01E5DD51E004286C8 /* Controller */,
+				5717E3921E5B1D1C009FBBDA /* Model */,
+				57CDFC101E5B125F00B89510 /* Views */,
 				57FC84AB1E59CF64001CABB6 /* AppDelegate.swift */,
 				57FC84AD1E59CF64001CABB6 /* ViewController.swift */,
 				57FC84AF1E59CF64001CABB6 /* Assets.xcassets */,
-				57FC84B11E59CF64001CABB6 /* Main.storyboard */,
 				57FC84B41E59CF64001CABB6 /* Info.plist */,
+				57E8E6F71E59D82B00BAB3B1 /* I7NiuUploadManager.swift */,
+				5717E3951E5B20CE009FBBDA /* Utils.swift */,
+				574299F61E5B41230007A26D /* _Custom.swift */,
 			);
 			path = i7NiuForMac;
 			sourceTree = "<group>";
@@ -122,6 +187,29 @@
 			path = i7NiuForMacUITests;
 			sourceTree = "<group>";
 		};
+		5B5999BB2FF6223E6B2666D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DC9344050EE017CC863B498 /* Pods_i7NiuForMac.framework */,
+				A0AF1EB4F6FB93D771AF620E /* Pods_i7NiuForMacTests.framework */,
+				0AFACB4BC7CB666C456B2925 /* Pods_i7NiuForMacUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CFF466E67ECC5C130FDDD4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				508EB2218D5A4EE53921485A /* Pods-i7NiuForMac.debug.xcconfig */,
+				3C802B53C45162F39091FA89 /* Pods-i7NiuForMac.release.xcconfig */,
+				0B7BEA90C3F25BAB2F289342 /* Pods-i7NiuForMacTests.debug.xcconfig */,
+				F7F465579618D0CA6F0810DD /* Pods-i7NiuForMacTests.release.xcconfig */,
+				3ABCA908160A2F51B2219892 /* Pods-i7NiuForMacUITests.debug.xcconfig */,
+				2CB0687A90893EE7C57E8FA9 /* Pods-i7NiuForMacUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FC84CD1E59CF65001CABB6 /* Build configuration list for PBXNativeTarget "i7NiuForMac" */;
 			buildPhases = (
+				C4230A69BDC034CDB5721851 /* [CP] Check Pods Manifest.lock */,
 				57FC84A41E59CF64001CABB6 /* Sources */,
 				57FC84A51E59CF64001CABB6 /* Frameworks */,
 				57FC84A61E59CF64001CABB6 /* Resources */,
+				F9F027C5ACAC8890012739EE /* [CP] Embed Pods Frameworks */,
+				4E043F11F0DE3C31E979419F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FC84D01E59CF65001CABB6 /* Build configuration list for PBXNativeTarget "i7NiuForMacTests" */;
 			buildPhases = (
+				E4066360FCF649ADD33B9E86 /* [CP] Check Pods Manifest.lock */,
 				57FC84B51E59CF65001CABB6 /* Sources */,
 				57FC84B61E59CF65001CABB6 /* Frameworks */,
 				57FC84B71E59CF65001CABB6 /* Resources */,
+				DDF589CF64C20363841E3928 /* [CP] Embed Pods Frameworks */,
+				EF565C2D1563CF9F795AB453 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FC84D31E59CF65001CABB6 /* Build configuration list for PBXNativeTarget "i7NiuForMacUITests" */;
 			buildPhases = (
+				17C292F3EE9285994FC86C42 /* [CP] Check Pods Manifest.lock */,
 				57FC84C01E59CF65001CABB6 /* Sources */,
 				57FC84C11E59CF65001CABB6 /* Frameworks */,
 				57FC84C21E59CF65001CABB6 /* Resources */,
+				D81493AEE9C22CCC17C64CB8 /* [CP] Embed Pods Frameworks */,
+				7E6AF0389FC39B0A081B6646 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,13 +350,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17C292F3EE9285994FC86C42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E043F11F0DE3C31E979419F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6AF0389FC39B0A081B6646 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4230A69BDC034CDB5721851 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D81493AEE9C22CCC17C64CB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDF589CF64C20363841E3928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4066360FCF649ADD33B9E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF565C2D1563CF9F795AB453 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F027C5ACAC8890012739EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57FC84A41E59CF64001CABB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				57FC84AE1E59CF64001CABB6 /* ViewController.swift in Sources */,
+				57CDFC0F1E5B115B00B89510 /* UploadFileListView.swift in Sources */,
+				57E8E6F81E59D82B00BAB3B1 /* I7NiuUploadManager.swift in Sources */,
+				5717E3941E5B1D39009FBBDA /* UploadFileModel.swift in Sources */,
+				57FC84D71E59D23E001CABB6 /* MainController.swift in Sources */,
+				574299F71E5B41230007A26D /* _Custom.swift in Sources */,
+				57E688A21E5DE0CC004286C8 /* PreferencesController.swift in Sources */,
 				57FC84AC1E59CF64001CABB6 /* AppDelegate.swift in Sources */,
+				5717E3911E5B18AA009FBBDA /* UploadFileCellView.swift in Sources */,
+				5717E3961E5B20CE009FBBDA /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +641,7 @@
 		};
 		57FC84CE1E59CF65001CABB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508EB2218D5A4EE53921485A /* Pods-i7NiuForMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -412,6 +656,7 @@
 		};
 		57FC84CF1E59CF65001CABB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C802B53C45162F39091FA89 /* Pods-i7NiuForMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -426,6 +671,7 @@
 		};
 		57FC84D11E59CF65001CABB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7BEA90C3F25BAB2F289342 /* Pods-i7NiuForMacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -442,6 +688,7 @@
 		};
 		57FC84D21E59CF65001CABB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F465579618D0CA6F0810DD /* Pods-i7NiuForMacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +705,7 @@
 		};
 		57FC84D41E59CF65001CABB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABCA908160A2F51B2219892 /* Pods-i7NiuForMacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -473,6 +721,7 @@
 		};
 		57FC84D51E59CF65001CABB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB0687A90893EE7C57E8FA9 /* Pods-i7NiuForMacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -505,6 +754,7 @@
 				57FC84CF1E59CF65001CABB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57FC84D01E59CF65001CABB6 /* Build configuration list for PBXNativeTarget "i7NiuForMacTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +763,7 @@
 				57FC84D21E59CF65001CABB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57FC84D31E59CF65001CABB6 /* Build configuration list for PBXNativeTarget "i7NiuForMacUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +772,7 @@
 				57FC84D51E59CF65001CABB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
