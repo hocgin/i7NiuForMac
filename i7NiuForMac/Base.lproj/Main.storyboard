@@ -662,22 +662,25 @@
                         <menuItem title="Upload Files" tag="1" id="rT3-OE-aBM">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="sss-zI-wMp"/>
                         <menuItem title="For Clipboard" keyEquivalent="u" id="EI1-yp-FVI" userLabel="For Clipboard">
                             <connections>
                                 <action selector="uploadForClipboard:" target="KtO-AY-q3O" id="w21-iY-uOo"/>
                             </connections>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="rTO-RU-ijE"/>
                         <menuItem title="Preferences" keyEquivalent="," id="Jpj-AA-KeO">
                             <connections>
                                 <segue destination="X7d-ed-xpz" kind="show" id="9XN-3U-oDB"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Compression" tag="2" id="zdg-DD-6ds">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem isSeparatorItem="YES" id="dWy-XX-zw3"/>
+                        <menuItem title="Compression" tag="2" keyEquivalent="c" id="zdg-DD-6ds">
                             <connections>
                                 <action selector="compressionStatusAction:" target="KtO-AY-q3O" id="ITa-Oa-ALN"/>
                             </connections>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="JXH-dj-M1I"/>
                         <menuItem title="Quit" keyEquivalent="q" id="M7Z-W6-IvH">
                             <connections>
                                 <action selector="quit:" target="KtO-AY-q3O" id="Xuo-p8-lcP"/>
@@ -692,22 +695,22 @@
                     </connections>
                 </customObject>
                 <customView id="Qea-AH-2gN" userLabel="UploadFileListView" customClass="UploadFileListView" customModule="i7NiuForMac" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="138"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <scrollView wantsLayer="YES" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="72" horizontalPageScroll="10" verticalLineScroll="72" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvb-z3-iFR">
-                            <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                            <rect key="frame" x="0.0" y="-2" width="160" height="138"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="qmu-Qy-kyT">
-                                <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                            <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="qmu-Qy-kyT">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="138"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="70" viewBased="YES" id="x70-2h-RGW">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="2"/>
-                                        <color key="backgroundColor" red="0.99994921684265137" green="0.99601316452026367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="gridColor" red="0.99994921680000004" green="0.99601316449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.99994921684265137" green="0.99601316452026367" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="gridColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                         <tableColumns>
                                             <tableColumn identifier="" width="157" minWidth="40" maxWidth="1000" id="hGR-7c-SSR">
                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
@@ -727,9 +730,9 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-iF-Ogu">
-                                                                <rect key="frame" x="3" y="10" width="67" height="57"/>
+                                                                <rect key="frame" x="3" y="10" width="67" height="55"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="photo" id="Xqs-5g-Q9h"/>
+                                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Xqs-5g-Q9h"/>
                                                             </imageView>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-xB-Twk">
                                                                 <rect key="frame" x="72" y="39" width="85" height="32"/>
@@ -743,7 +746,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fot-cx-Ih9">
-                                                                <rect key="frame" x="72" y="3" width="86" height="32"/>
+                                                                <rect key="frame" x="72" y="4" width="86" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                 <buttonCell key="cell" type="push" title="md复制" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Ya0-M9-ePi">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -759,6 +762,7 @@
                                                             </box>
                                                         </subviews>
                                                         <connections>
+                                                            <outlet property="line" destination="aoz-W6-a8W" id="AhH-vl-e0D"/>
                                                             <outlet property="uploadImageView" destination="6hP-iF-Ogu" id="mki-Kv-xmG"/>
                                                         </connections>
                                                     </tableCellView>

@@ -78,7 +78,7 @@ class I7NiuUploadManager {
         for filePath in filePaths {
             uploadFiles.append(uploadFile(filePath: filePath as! String))
         }
-        
+
         when(fulfilled: uploadFiles).then(execute: { models -> Void in
             callback(models)
         }).catch(execute: {error in

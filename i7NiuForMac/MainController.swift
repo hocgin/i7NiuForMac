@@ -19,7 +19,7 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     
     
     override func awakeFromNib() {
-        dragStatusItem.title = "i7Niu"
+        dragStatusItem.image = #imageLiteral(resourceName: "i7Niu-32x32")
         dragStatusItem.menu = self.menu
         
         // 注册拖拉
@@ -72,9 +72,13 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         let pasteboard = sender.draggingPasteboard()
         let filePaths = pasteboard.propertyList(forType: NSFilenamesPboardType) as! NSArray
+        // 开启上传状态
+        dragStatusItem.image = #imageLiteral(resourceName: "upload")
         self.uploadManager.uploadFiles(filePaths: filePaths, callback: { models in
             self.uploadFileListView.loadModel(models: models)
             self.showUploadFileHistory()
+            // 关闭上传状态
+            self.dragStatusItem.image = #imageLiteral(resourceName: "i7Niu-32x32")
         })
         return true
     }
@@ -83,13 +87,14 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     @IBAction func uploadForClipboard(_ sender: Any) {
         let pasteboard = NSPasteboard.general()
         if let imageData = pasteboard.data(forType: NSPasteboardTypePNG){
-            // TODO 开启上传状态
-            
+            // 开启上传状态
+            dragStatusItem.image = #imageLiteral(resourceName: "upload")
             self.uploadManager.uploadData(imageData: imageData, callback: { models in
                 self.uploadFileListView.loadModel(models: models)
                 self.showUploadFileHistory()
+                // 关闭上传状态
+                self.dragStatusItem.image = #imageLiteral(resourceName: "i7Niu-32x32")
             })
-            // TODO 关闭上传状态
             
         }else{
             Utils.showNotify(title: "数据格式错误", text: "粘贴板的非图片！")
