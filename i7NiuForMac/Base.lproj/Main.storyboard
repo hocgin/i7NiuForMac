@@ -672,6 +672,12 @@
                                 <segue destination="X7d-ed-xpz" kind="show" id="9XN-3U-oDB"/>
                             </connections>
                         </menuItem>
+                        <menuItem title="Compression" tag="2" id="zdg-DD-6ds">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="compressionStatusAction:" target="KtO-AY-q3O" id="ITa-Oa-ALN"/>
+                            </connections>
+                        </menuItem>
                         <menuItem title="Quit" keyEquivalent="q" id="M7Z-W6-IvH">
                             <connections>
                                 <action selector="quit:" target="KtO-AY-q3O" id="Xuo-p8-lcP"/>
@@ -768,7 +774,7 @@
                                 <color key="backgroundColor" red="0.99994921680000004" green="0.99601316449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </clipView>
                             <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="obz-Pq-kkn">
-                                <rect key="frame" x="0.0" y="-15" width="0.0" height="15"/>
+                                <rect key="frame" x="0.0" y="-16" width="0.0" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                             <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="i7S-rT-bYN">

@@ -14,6 +14,9 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     @IBOutlet weak var uploadFileListView: UploadFileListView!
     let dragStatusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     var uploadManager:I7NiuUploadManager!
+    let defaults = UserDefaults.standard;
+    
+    
     
     override func awakeFromNib() {
         dragStatusItem.title = "i7Niu"
@@ -28,6 +31,12 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
         uploadFilesView.isHidden = true
 
         uploadManager = I7NiuUploadManager()
+        
+        // Compression Status
+        if let compressionItem = self.menu.item(withTag: 2) {
+            compressionItem.state = UserInfo.getCompressionState();
+        }
+        
     }
     
     // 显示上传文件历史记录
@@ -41,6 +50,22 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     // 开启文件拖动，+ 号
     func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         return NSDragOperation.copy
+    }
+    
+    // 设置是否压缩
+    @IBAction func compressionStatusAction(_ sender: NSMenuItem) {
+        let state: Int = { () -> Int in
+            let state = defaults.integer(forKey: "compressionState")
+            if state == NSOnState {
+                return NSOffState
+            }
+            else {
+                return NSOnState
+            }
+        }()
+        sender.state = state
+        defaults.set(state, forKey: CompressSettingKey)
+        defaults.synchronize()
     }
     
     // 上传文件

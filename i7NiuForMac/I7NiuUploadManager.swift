@@ -17,6 +17,7 @@ class I7NiuUploadManager {
     
     let shareWorkspace = NSWorkspace.shared()
     let uploadManager = QNUploadManager()!
+    let fileManager = FileManager()
     
     // 获取上传 Token
     func get7NiuToken(fileName: String) -> String{
@@ -41,19 +42,33 @@ class I7NiuUploadManager {
     private func uploadFile(filePath:String) -> Promise<UploadFileModel>{
         return Promise{ fulfill, reject in
             let fileType = try! shareWorkspace.type(ofFile: filePath)
+            let fileAttr = try! fileManager.attributesOfItem(atPath: filePath) as NSDictionary
+            let fileSize = fileAttr.fileSize()
             // 从路径中获取文件名
             let fileName = NSURL(fileURLWithPath: filePath).lastPathComponent!
             let uploadToken = get7NiuToken(fileName: fileName)
             
-            // Upload, 华东地区用默认配置，其他地区更改 Zone
-            self.uploadManager.putFile(filePath, key: fileName, token: uploadToken, complete: { info, key, resp -> Void in
-                if (info?.isOK)! {
-                    let model = self.createUploadFileModel(filename: key!, filePath: filePath, fileType: fileType)
-                    fulfill(model)
-                }else{
-                    reject((info?.error)!)
-                }
-            }, option: nil)
+            // 上传
+            if UserInfo.getCompressionState() == NSOnState && CompressFileTypes.contains(fileType) && fileSize > MaxImageSize { // 压缩图片后上传
+                self.uploadManager.put( Utils.compressionImage(filePath: filePath), key: fileName, token: uploadToken, complete: { info, key, resp -> Void in
+                    if (info?.isOK)! {
+                        let model = self.createUploadFileModel(filename: key!, filePath: filePath, fileType: fileType)
+                        fulfill(model)
+                    }else{
+                        reject((info?.error)!)
+                    }
+                }, option: nil)
+            } else {
+                // Upload, 华东地区用默认配置，其他地区更改 Zone
+                self.uploadManager.putFile(filePath, key: fileName, token: uploadToken, complete: { info, key, resp -> Void in
+                    if (info?.isOK)! {
+                        let model = self.createUploadFileModel(filename: key!, filePath: filePath, fileType: fileType)
+                        fulfill(model)
+                    }else{
+                        reject((info?.error)!)
+                    }
+                }, option: nil)
+            }
         }
     }
     
@@ -75,13 +90,13 @@ class I7NiuUploadManager {
     func uploadData(imageData: Data, callback: @escaping ([UploadFileModel])->Void){
         let filename = "\(NSUUID().uuidString).png"
         let token = self.get7NiuToken(fileName: filename)
+        
         uploadManager.put(imageData, key: filename, token: token, complete: {info, key, resp -> Void in
-            switch info?.statusCode {
-            case Int32(200)?:
+            if (info?.isOK)! {
                 let model = self.createUploadFileModel(filename: filename, imageData: imageData)
                 let models: [UploadFileModel] = [model]
                 callback(models)
-            default:
+            }else{
                 Utils.showNotify(title: "错误", text: "上传失败！")
             }
         }, option: nil)

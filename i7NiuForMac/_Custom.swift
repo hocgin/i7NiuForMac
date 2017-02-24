@@ -10,11 +10,8 @@ import Foundation
 
 let CompressFileTypes = ["public.jpeg", "public.png"]
 let ImageFileTypes = CompressFileTypes + ["public.gif"]
-
-
-
 let MaxImageSize:UInt64 = 409600
-let CompressSettingKey = "compressState"
+let CompressSettingKey = "compressionState"
 let AllKeys = ["accessKey", "secretKey", "bucket", "domain"]
 
 
@@ -35,12 +32,10 @@ class UserInfo{
     static func getBucket() -> String {
         return UserDefaults.standard.string(forKey: "bucket") ?? ""
     }
+    
+    static func getCompressionState() -> Int {
+        return UserDefaults.standard.integer(forKey: "compressionState")
+    }
+    
+    
 }
-
-
-
-// 设置
-// 压缩
-// about
-// bug
-// logo
