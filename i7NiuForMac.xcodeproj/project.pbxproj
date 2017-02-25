@@ -24,6 +24,8 @@
 		57FC84BE1E59CF65001CABB6 /* i7NiuForMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84BD1E59CF65001CABB6 /* i7NiuForMacTests.swift */; };
 		57FC84C91E59CF65001CABB6 /* i7NiuForMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84C81E59CF65001CABB6 /* i7NiuForMacUITests.swift */; };
 		57FC84D71E59D23E001CABB6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84D61E59D23E001CABB6 /* MainController.swift */; };
+		B7C2CCED98785FE5EA5D70F1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B7C2C23AC9FA158A7538AB03 /* README.md */; };
+		B7C2CDCA32ADA07512ED9664 /* screenshots in Resources */ = {isa = PBXBuildFile; fileRef = B7C2C070FA24D08E0E14B425 /* screenshots */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		57FC84CA1E59CF65001CABB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57FC84D61E59D23E001CABB6 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		A0AF1EB4F6FB93D771AF620E /* Pods_i7NiuForMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C2C070FA24D08E0E14B425 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
+		B7C2C23AC9FA158A7538AB03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F7F465579618D0CA6F0810DD /* Pods-i7NiuForMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,8 @@
 				57FC84C71E59CF65001CABB6 /* i7NiuForMacUITests */,
 				57FC84A91E59CF64001CABB6 /* Products */,
 				5B5999BB2FF6223E6B2666D9 /* Frameworks */,
+				B7C2C23AC9FA158A7538AB03 /* README.md */,
+				B7C2C070FA24D08E0E14B425 /* screenshots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +337,7 @@
 			files = (
 				57FC84B01E59CF64001CABB6 /* Assets.xcassets in Resources */,
 				57FC84B31E59CF64001CABB6 /* Main.storyboard in Resources */,
+				B7C2CDCA32ADA07512ED9664 /* screenshots in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +510,7 @@
 				57FC84AC1E59CF64001CABB6 /* AppDelegate.swift in Sources */,
 				5717E3911E5B18AA009FBBDA /* UploadFileCellView.swift in Sources */,
 				5717E3961E5B20CE009FBBDA /* Utils.swift in Sources */,
+				B7C2CCED98785FE5EA5D70F1 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
