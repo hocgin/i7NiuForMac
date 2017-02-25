@@ -681,9 +681,9 @@
                             </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="dWy-XX-zw3"/>
-                        <menuItem title="About Author" id="wqb-iH-EH6">
+                        <menuItem title="About" id="wqb-iH-EH6">
                             <modifierMask key="keyEquivalentModifierMask"/>
-                            <menu key="submenu" title="About Author" id="Gbk-jT-bAW">
+                            <menu key="submenu" title="About" id="Gbk-jT-bAW">
                                 <items>
                                     <menuItem title="GitHub" id="og2-fS-z1k">
                                         <modifierMask key="keyEquivalentModifierMask"/>
