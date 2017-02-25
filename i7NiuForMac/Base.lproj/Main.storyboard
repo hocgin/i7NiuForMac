@@ -730,14 +730,14 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-iF-Ogu">
-                                                                <rect key="frame" x="3" y="10" width="67" height="55"/>
+                                                                <rect key="frame" x="0.0" y="25" width="70" height="44"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Xqs-5g-Q9h"/>
                                                             </imageView>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-xB-Twk">
-                                                                <rect key="frame" x="72" y="39" width="85" height="32"/>
+                                                                <rect key="frame" x="66" y="41" width="94" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <buttonCell key="cell" type="push" title="复制链接" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="qaO-tN-Kki">
+                                                                <buttonCell key="cell" type="push" title="URL" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="qaO-tN-Kki">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
@@ -746,9 +746,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fot-cx-Ih9">
-                                                                <rect key="frame" x="72" y="4" width="86" height="32"/>
+                                                                <rect key="frame" x="66" y="17" width="94" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <buttonCell key="cell" type="push" title="md复制" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Ya0-M9-ePi">
+                                                                <buttonCell key="cell" type="push" title="MarkDown" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Ya0-M9-ePi">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
@@ -760,8 +760,18 @@
                                                                 <rect key="frame" x="-3" y="1" width="164" height="5"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             </box>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EV-sc-Hpu">
+                                                                <rect key="frame" x="1" y="8" width="155" height="19"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="文件名" id="8lK-qb-OPa" userLabel="mklhhhhhhhhh">
+                                                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
                                                         </subviews>
                                                         <connections>
+                                                            <outlet property="fileNameView" destination="8EV-sc-Hpu" id="u9w-6S-MUn"/>
                                                             <outlet property="line" destination="aoz-W6-a8W" id="AhH-vl-e0D"/>
                                                             <outlet property="uploadImageView" destination="6hP-iF-Ogu" id="mki-Kv-xmG"/>
                                                         </connections>

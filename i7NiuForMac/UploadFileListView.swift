@@ -31,7 +31,7 @@ class UploadFileListView: NSView , NSTableViewDelegate, NSTableViewDataSource {
             let model = uploadFileCellDatas[row]
             cell.imageUrl = model.imageUrl
             cell.uploadImageView.image = model.image
-
+            cell.fileNameView.stringValue = model.filename
             return cell
         }
         return nil

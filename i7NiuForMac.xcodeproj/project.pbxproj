@@ -137,7 +137,6 @@
 				57FC84BC1E59CF65001CABB6 /* i7NiuForMacTests */,
 				57FC84C71E59CF65001CABB6 /* i7NiuForMacUITests */,
 				57FC84A91E59CF64001CABB6 /* Products */,
-				5CFF466E67ECC5C130FDDD4C /* Pods */,
 				5B5999BB2FF6223E6B2666D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -190,6 +189,7 @@
 		5B5999BB2FF6223E6B2666D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CFF466E67ECC5C130FDDD4C /* Pods */,
 				3DC9344050EE017CC863B498 /* Pods_i7NiuForMac.framework */,
 				A0AF1EB4F6FB93D771AF620E /* Pods_i7NiuForMacTests.framework */,
 				0AFACB4BC7CB666C456B2925 /* Pods_i7NiuForMacUITests.framework */,

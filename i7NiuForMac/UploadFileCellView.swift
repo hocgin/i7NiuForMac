@@ -12,6 +12,8 @@ class UploadFileCellView: NSTableCellView {
     @IBOutlet weak var uploadImageView: NSImageView!
     @IBOutlet weak var line: NSBox!
 
+    @IBOutlet weak var fileNameView: NSTextField!
+    
     var imageName:String!
     var imageUrl:String!
     
