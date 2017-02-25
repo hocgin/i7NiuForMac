@@ -34,7 +34,6 @@ class I7NiuUploadManager {
         let encodedSign = QNUrlSafeBase64.encode(Data(bytes: secretSign))!
         // 生成上传凭证
         let policy:String = [UserInfo.getAccessKey(), encodedSign, encodedPutPolicy].joined(separator: ":")
-        NSLog("[String Token]: \n\(policy)")
         return policy
     }
     
@@ -82,7 +81,7 @@ class I7NiuUploadManager {
         when(fulfilled: uploadFiles).then(execute: { models -> Void in
             callback(models)
         }).catch(execute: {error in
-            Utils.showNotify(title: "错误", text: "上传失败！")
+            Utils.showNotify(title: "错误", text: "上传失败, 请检查网络或配置！")
         })
     }
     
@@ -97,7 +96,7 @@ class I7NiuUploadManager {
                 let models: [UploadFileModel] = [model]
                 callback(models)
             }else{
-                Utils.showNotify(title: "错误", text: "上传失败！")
+                Utils.showNotify(title: "错误", text: "上传失败, 请检查网络或配置！")
             }
         }, option: nil)
     }
