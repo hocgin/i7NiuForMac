@@ -101,6 +101,19 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
         }
     }
     
+    @IBAction func openURL(_ sender: NSMenuItem) {
+        NSLog(sender.identifier!)
+        let urls = [
+            "http://github.com/hocgin",
+            "http://weibo.com/hocgin",
+            "https://hocg.in"
+        ]
+        
+        if let url = URL(string: urls[sender.tag]), NSWorkspace.shared().open(url) {
+            print("default browser was successfully opened")
+        }
+    }
+    
     // Quit Application
     @IBAction func quit(_ sender: Any) {
         NSApplication.shared().terminate(self)

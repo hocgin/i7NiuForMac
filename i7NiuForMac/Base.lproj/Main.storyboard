@@ -674,11 +674,37 @@
                                 <segue destination="X7d-ed-xpz" kind="show" id="9XN-3U-oDB"/>
                             </connections>
                         </menuItem>
-                        <menuItem isSeparatorItem="YES" id="dWy-XX-zw3"/>
+                        <menuItem isSeparatorItem="YES" id="5fX-X7-w7n"/>
                         <menuItem title="Compression" tag="2" keyEquivalent="c" id="zdg-DD-6ds">
                             <connections>
                                 <action selector="compressionStatusAction:" target="KtO-AY-q3O" id="ITa-Oa-ALN"/>
                             </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="dWy-XX-zw3"/>
+                        <menuItem title="About Author" id="wqb-iH-EH6">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="About Author" id="Gbk-jT-bAW">
+                                <items>
+                                    <menuItem title="GitHub" id="og2-fS-z1k">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="openURL:" target="KtO-AY-q3O" id="Xey-TZ-Xhz"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Weibo" tag="1" id="aDK-74-4iC">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="openURL:" target="KtO-AY-q3O" id="61m-c2-kpa"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Blog" tag="2" id="eqY-2D-fCA">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="openURL:" target="KtO-AY-q3O" id="xx9-B2-43C"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="JXH-dj-M1I"/>
                         <menuItem title="Quit" keyEquivalent="q" id="M7Z-W6-IvH">
