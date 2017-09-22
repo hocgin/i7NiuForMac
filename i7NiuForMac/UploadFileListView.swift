@@ -30,8 +30,10 @@ class UploadFileListView: NSView , NSTableViewDelegate, NSTableViewDataSource {
         if let cell = tableView.make(withIdentifier: self.cellIdentifier, owner: nil) as? UploadFileCellView {
             let model = uploadFileCellDatas[row]
             cell.imageUrl = model.imageUrl
+            cell.imageName = model.filename
             cell.uploadImageView.image = model.image
             cell.fileNameView.stringValue = model.filename
+            
             return cell
         }
         return nil
@@ -49,6 +51,21 @@ class UploadFileListView: NSView , NSTableViewDelegate, NSTableViewDataSource {
                 self.uploadFileCellDatas = Array(self.uploadFileCellDatas[0..<maxCount])
             }
             self.uploadImageListView.reloadData()
+        keepCopy(models: models)
+    }
+    
+    // 复制一堆 url 并保持格式
+    func keepCopy(models: [UploadFileModel]){
+        if UserInfo.getAutoCopyState() == NSOnState {
+            var text = "";
+            for model in models {
+                text += "\n\(model.imageUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) ?? "")"
+            }
+            text.remove(at: text.startIndex)
+            
+            Utils.copyString(text: text)
+            Utils.showNotify(title: "URL自动复制提示", text: "已复制 \(models.count) 个链接")
+        }
     }
     
 }

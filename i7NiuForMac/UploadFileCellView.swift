@@ -16,14 +16,19 @@ class UploadFileCellView: NSTableCellView {
     
     var imageName:String!
     var imageUrl:String!
+    var imageUrlString:String {
+        get {
+            return self.imageUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) ?? ""
+        }
+    }
     
     @IBAction func clickMdAction(_ sender: NSButton) {
-        Utils.copyString(text: "![image](\(self.imageUrl!))")
+        Utils.copyString(text: "![\(self.imageName ?? "image")](\(self.imageUrlString))")
         Utils.showNotify(title: "MarkDown复制提示", text: "已成功复制")
     }
     
     @IBAction func clickUrlAction(_ sender: NSButton) {
-        Utils.copyString(text: self.imageUrl!)
+        Utils.copyString(text: self.imageUrlString)
         Utils.showNotify(title: "URL复制提示", text: "已成功复制")
     }
 }

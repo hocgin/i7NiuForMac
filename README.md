@@ -1,6 +1,11 @@
 <h1 align="center">i7Niu For Mac</h1>
 <p align="center"><img src="screenshots/i7Niu-250x250.png"/></p>
 
+# Update
+- 新增自动复制URL到剪切板
+- fixed 文件上传后URL进行URLEncoding编码
+- fixed 更新依赖的版本
+
 # Install It
 > [Download](https://github.com/hocgin/i7NiuForMac/releases)
 

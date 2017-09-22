@@ -36,6 +36,10 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
         if let compressionItem = self.menu.item(withTag: 2) {
             compressionItem.state = UserInfo.getCompressionState();
         }
+        // 自动拷贝上传的url 的状态
+        if let autoCopyItem = self.menu.item(withTag: 3) {
+            autoCopyItem.state = UserInfo.getAutoCopyState();
+        }
         
     }
     
@@ -55,7 +59,7 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     // 设置是否压缩
     @IBAction func compressionStatusAction(_ sender: NSMenuItem) {
         let state: Int = { () -> Int in
-            let state = defaults.integer(forKey: "compressionState")
+            let state = defaults.integer(forKey: CompressSettingKey)
             if state == NSOnState {
                 return NSOffState
             }
@@ -65,6 +69,22 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
         }()
         sender.state = state
         defaults.set(state, forKey: CompressSettingKey)
+        defaults.synchronize()
+    }
+    
+    // 设置是否自动拷贝url
+    @IBAction func autoCopyStatusAction(_ sender: NSMenuItem) {
+        let state: Int = { () -> Int in
+            let state = defaults.integer(forKey: AutoCopySettingKey)
+            if state == NSOnState {
+                return NSOffState
+            }
+            else {
+                return NSOnState
+            }
+        }()
+        sender.state = state
+        defaults.set(state, forKey: AutoCopySettingKey)
         defaults.synchronize()
     }
     
@@ -118,4 +138,6 @@ class MainController: NSObject, NSWindowDelegate, NSDraggingDestination {
     @IBAction func quit(_ sender: Any) {
         NSApplication.shared().terminate(self)
     }
+    
+    
 }

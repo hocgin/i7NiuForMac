@@ -71,7 +71,7 @@ class I7NiuUploadManager {
         }
     }
     
-    // 上传文件
+    // 上传多个文件
     func uploadFiles(filePaths: NSArray, callback: @escaping ([UploadFileModel])->Void) -> Void {
         var uploadFiles: [Promise<UploadFileModel>] = []
         for filePath in filePaths {
@@ -83,6 +83,8 @@ class I7NiuUploadManager {
         }).catch(execute: {error in
             Utils.showNotify(title: "错误", text: "上传失败, 请检查网络或配置！")
         })
+        
+        
     }
     
     // 上传数据

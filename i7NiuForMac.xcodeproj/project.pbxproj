@@ -24,8 +24,6 @@
 		57FC84BE1E59CF65001CABB6 /* i7NiuForMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84BD1E59CF65001CABB6 /* i7NiuForMacTests.swift */; };
 		57FC84C91E59CF65001CABB6 /* i7NiuForMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84C81E59CF65001CABB6 /* i7NiuForMacUITests.swift */; };
 		57FC84D71E59D23E001CABB6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC84D61E59D23E001CABB6 /* MainController.swift */; };
-		B7C2CCED98785FE5EA5D70F1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B7C2C23AC9FA158A7538AB03 /* README.md */; };
-		B7C2CDCA32ADA07512ED9664 /* screenshots in Resources */ = {isa = PBXBuildFile; fileRef = B7C2C070FA24D08E0E14B425 /* screenshots */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +46,13 @@
 /* Begin PBXFileReference section */
 		0AFACB4BC7CB666C456B2925 /* Pods_i7NiuForMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7BEA90C3F25BAB2F289342 /* Pods-i7NiuForMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C426726DBA2DD1352833D37 /* Pods-i7NiuForMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16EBBB870C10E2013D152DCD /* Pods-i7NiuForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac.debug.xcconfig"; sourceTree = "<group>"; };
 		2CB0687A90893EE7C57E8FA9 /* Pods-i7NiuForMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3ABCA908160A2F51B2219892 /* Pods-i7NiuForMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C802B53C45162F39091FA89 /* Pods-i7NiuForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac.release.xcconfig"; sourceTree = "<group>"; };
 		3DC9344050EE017CC863B498 /* Pods_i7NiuForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4582EB5B0520422015143A89 /* Pods-i7NiuForMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		508EB2218D5A4EE53921485A /* Pods-i7NiuForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac.debug.xcconfig"; sourceTree = "<group>"; };
 		5717E3901E5B18AA009FBBDA /* UploadFileCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileCellView.swift; sourceTree = "<group>"; };
 		5717E3931E5B1D39009FBBDA /* UploadFileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileModel.swift; sourceTree = "<group>"; };
@@ -73,9 +74,10 @@
 		57FC84C81E59CF65001CABB6 /* i7NiuForMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i7NiuForMacUITests.swift; sourceTree = "<group>"; };
 		57FC84CA1E59CF65001CABB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57FC84D61E59D23E001CABB6 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		94A3B8BB27106CC4398C85D4 /* Pods-i7NiuForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMac/Pods-i7NiuForMac.release.xcconfig"; sourceTree = "<group>"; };
 		A0AF1EB4F6FB93D771AF620E /* Pods_i7NiuForMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i7NiuForMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7C2C070FA24D08E0E14B425 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
-		B7C2C23AC9FA158A7538AB03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CC59C56C56A0CBDC771EF000 /* Pods-i7NiuForMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC300AD04EB3E038384F8B09 /* Pods-i7NiuForMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacUITests/Pods-i7NiuForMacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7F465579618D0CA6F0810DD /* Pods-i7NiuForMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i7NiuForMacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-i7NiuForMacTests/Pods-i7NiuForMacTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,8 +144,7 @@
 				57FC84C71E59CF65001CABB6 /* i7NiuForMacUITests */,
 				57FC84A91E59CF64001CABB6 /* Products */,
 				5B5999BB2FF6223E6B2666D9 /* Frameworks */,
-				B7C2C23AC9FA158A7538AB03 /* README.md */,
-				B7C2C070FA24D08E0E14B425 /* screenshots */,
+				AB6B4C45A0698E0A8B8087E6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +213,19 @@
 				F7F465579618D0CA6F0810DD /* Pods-i7NiuForMacTests.release.xcconfig */,
 				3ABCA908160A2F51B2219892 /* Pods-i7NiuForMacUITests.debug.xcconfig */,
 				2CB0687A90893EE7C57E8FA9 /* Pods-i7NiuForMacUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB6B4C45A0698E0A8B8087E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16EBBB870C10E2013D152DCD /* Pods-i7NiuForMac.debug.xcconfig */,
+				94A3B8BB27106CC4398C85D4 /* Pods-i7NiuForMac.release.xcconfig */,
+				0C426726DBA2DD1352833D37 /* Pods-i7NiuForMacTests.debug.xcconfig */,
+				CC59C56C56A0CBDC771EF000 /* Pods-i7NiuForMacTests.release.xcconfig */,
+				4582EB5B0520422015143A89 /* Pods-i7NiuForMacUITests.debug.xcconfig */,
+				EC300AD04EB3E038384F8B09 /* Pods-i7NiuForMacUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -288,7 +302,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = hocgin;
 				TargetAttributes = {
 					57FC84A71E59CF64001CABB6 = {
@@ -337,7 +351,6 @@
 			files = (
 				57FC84B01E59CF64001CABB6 /* Assets.xcassets in Resources */,
 				57FC84B31E59CF64001CABB6 /* Main.storyboard in Resources */,
-				B7C2CDCA32ADA07512ED9664 /* screenshots in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +523,6 @@
 				57FC84AC1E59CF64001CABB6 /* AppDelegate.swift in Sources */,
 				5717E3911E5B18AA009FBBDA /* UploadFileCellView.swift in Sources */,
 				5717E3961E5B20CE009FBBDA /* Utils.swift in Sources */,
-				B7C2CCED98785FE5EA5D70F1 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +578,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -574,7 +588,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -615,7 +633,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -623,7 +643,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

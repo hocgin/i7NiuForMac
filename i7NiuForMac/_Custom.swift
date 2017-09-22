@@ -11,7 +11,9 @@ import Foundation
 let CompressFileTypes = ["public.jpeg", "public.png"]
 let ImageFileTypes = CompressFileTypes + ["public.gif"]
 let MaxImageSize:UInt64 = 409600
+
 let CompressSettingKey = "compressionState"
+let AutoCopySettingKey = "autoCopyState"
 let AllKeys = ["accessKey", "secretKey", "bucket", "domain"]
 
 
@@ -35,6 +37,10 @@ class UserInfo{
     
     static func getCompressionState() -> Int {
         return UserDefaults.standard.integer(forKey: "compressionState")
+    }
+    
+    static func getAutoCopyState() -> Int {
+        return UserDefaults.standard.integer(forKey: "autoCopyState")
     }
     
     
